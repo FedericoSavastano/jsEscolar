@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Js Escolar</title>
+  </head>
+  <body>
+    <!-- BOTONERA -->
+    <div id="botoneras">
+      <button class="botonbotonera" id="btnlengua">
+        Lengua
+      </button>
+      <button class="botonbotonera" id="btnmatematica">Matemática</button>
+      <button class="botonbotonera" id="btningles">Inglés</button>
+    </div>
+    <!-- FIN DE BOTONERA -->
+    <!-- INGLES -->
+    <div class="tareawrap oculta" id="ingles">
+      <div class="ayudasec">
+        <button class="btnayuda" id="btnayudaingles">ayuda</button>
+        <p class="ayudatxt oculta" id="ayudatxtingles">
+          Los verbos en pasado participio <br />
+          son los de la tercera columna <br />
+          en la lista de verbos irregulares
+        </p>
+      </div>
+      <div class="tarea">
+        <h1>Inglés</h1>
+        <h3>Arrastrá el verbo en presente a su forma en pasado participio</h3>
+        <h4 style="font-style: italic;">
+          Drag the verb in it's present form to it's past participle form
+        </h4>
+        <div class="verbos">
+          <div class="verbospresente">
+            <div id="go" class="verbing"><p>Go</p></div>
+            <div id="buy" class="verbing"><p>Buy</p></div>
+            <div id="drive" class="verbing"><p>Drive</p></div>
+            <div id="fly" class="verbing"><p>Fly</p></div>
+            <div id="lead" class="verbing"><p>Lead</p></div>
+          </div>
+
+          <div class="verbospp">
+            <div id="bought" class="verbing"><p>Bought</p></div>
+            <div id="flown" class="verbing"><p>Flown</p></div>
+            <div id="led" class="verbing"><p>Led</p></div>
+            <div id="driven" class="verbing"><p>Driven</p></div>
+            <div id="gone" class="verbing"><p>Gone</p></div>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+    <!-- FIN DE INGLES -->
+
+    <!-- MATEMATICA -->
+    <div class="tareawrap oculta" id="matematica">
+      <div class="ayudasec">
+        <button class="btnayuda" id="btnayudamate">ayuda</button>
+        <p class="ayudatxt oculta" id="ayudatxtmate">
+          El orden a resolver es: <br />primero lo que esté entre parentesis,<br />
+          después las divisiones y multiplicaciones <br />
+          y por último las sumas y restas
+        </p>
+      </div>
+      <div class="tarea">
+        <h1>Matemática</h1>
+        <h3>Hacé las siguientes operaciones</h3>
+        <div class="cuentawrap">
+          <div class="cuenta">
+            <p>
+              4 / 2 :
+              <input
+                type="text"
+                class="resultadomate"
+                id="resulmate1"
+                data-id="0"
+              />
+            </p>
+          </div>
+          <div class="cuenta">
+            <p>
+              10 - 2 :
+              <input
+                type="text"
+                class="resultadomate"
+                id="resulmate2"
+                data-id="1"
+              />
+            </p>
+          </div>
+          <div class="cuenta">
+            <p>
+              9 x 2 + 1 :
+              <input
+                type="text"
+                class="resultadomate"
+                id="resulmate3"
+                data-id="2"
+              />
+            </p>
+          </div>
+          <div class="cuenta">
+            <p>
+              100 / 5 :
+              <input
+                type="text"
+                class="resultadomate"
+                id="resulmate4"
+                data-id="3"
+              />
+            </p>
+          </div>
+          <div class="cuenta">
+            <p>
+              (88 - 40) + 7 :
+              <input
+                type="text"
+                class="resultadomate"
+                id="resulmate5"
+                data-id="4"
+              />
+            </p>
+          </div>
+          <div class="cuenta">
+            <p>
+              (5 - 2) * 3 :
+              <input
+                type="text"
+                class="resultadomate"
+                id="resulmate6"
+                data-id="5"
+              />
+            </p>
+          </div>
+          <div class="cuenta">
+            <p>
+              (10 + 12) + (88 - 66) :
+              <input
+                type="text"
+                class="resultadomate"
+                id="resulmate7"
+                data-id="6"
+              />
+            </p>
+          </div>
+          <div class="cuenta">
+            <p>
+              5 x 3 + 17 :
+              <input
+                type="text"
+                class="resultadomate"
+                id="resulmate8"
+                data-id="7"
+              />
+            </p>
+          </div>
+          <div class="cuenta">
+            <p>
+              (800 - 700) / 10 :
+              <input
+                type="text"
+                class="resultadomate"
+                id="resulmate9"
+                data-id="8"
+              />
+            </p>
+          </div>
+          <div class="cuenta">
+            <p>
+              25 / 5 :
+              <input
+                type="text"
+                class="resultadomate"
+                id="resulmate10"
+                data-id="9"
+              />
+            </p>
+          </div>
+        </div>
+
+        <div id="buttondivm">
+          <button class="btnnota" id="resulmate">ver nota</button>
+        </div>
+        <p id="notam"></p>
+      </div>
+      <div></div>
+    </div>
+    <!-- FIN DE MATEMATICA -->
+
+    <!-- LENGUA -->
+    <div class="tareawrap" id="lengua">
+      <div class="ayudasec">
+        <button class="btnayuda" id="btnayudalengua">ayuda</button>
+        <p class="ayudatxt oculta" id="ayudatxtlengua">
+          los sustantivos son objetos y nombres <br />
+          los verbos son acciones<br />
+          los adjetivos son descripciones
+        </p>
+      </div>
+      <div class="tarea">
+        <h1>Lengua</h1>
+        <h3>Encontrá y hacé click en todos los sustantivos</h3>
+        <p>
+          Había una <span class="sust" id="gata">gata</span> acostada sobre la
+          <span class="sust" id="cama">cama</span>. Frente a ella había un
+          <span class="sust" id="televisor">televisor</span>.
+        </p>
+        <br />
+        <h3>Encontrá y hacé click en todos los verbos</h3>
+        <p>
+          Ayer <span class="verb" id="jugue">jugué</span> al fútbol con mis
+          amigos. Tomás <span class="verb" id="metio">metió</span> un gol. Yo no
+          <span class="verb" id="meti">metí</span> ninguno, pero igual me
+          <span class="verb" id="diverti">divertí</span>.
+        </p>
+        <br />
+        <h3>Encontrá y hacé click en todos los adjetivos</h3>
+        <p>
+          Milo pintó con un crayón
+          <span class="adj" id="amarillo">amarillo</span>, después usó un fibrón
+          <span class="adj" id="grueso">grueso</span> y repasó con birome. Le
+          quedó un dibujo <span class="adj" id="buenisimo">buenisimo</span>.
+        </p>
+        <div id="buttondiv">
+          <button class="btnnota" id="boton">ver nota</button>
+        </div>
+        <p id="nota"></p>
+      </div>
+      <div></div>
+    </div>
+    <!-- FIN DE LENGUA -->
+
+    <script src="app.js"></script>
+  </body>
+</html>

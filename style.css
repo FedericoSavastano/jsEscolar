@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap");
+
+body {
+  /* background: url(https://images.unsplash.com/photo-1515787366009-7cbdd2dc587b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2080&q=60); */
+  background: url(./img/fondook2.jpg);
+  background-size: cover;
+  font-family: "Manrope", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#pagina {
+  z-index: 1;
+}
+.tareawrap {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+}
+
+.oculta {
+  display: none;
+}
+.tarea {
+  margin-top: 20px;
+}
+
+#buttondiv {
+  color: yellow;
+}
+
+.colora {
+  background-color: yellow;
+}
+
+#nota,
+#notam {
+  text-align: center;
+}
+
+/* BOTONES */
+#botoneras {
+  padding-top: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+.botonbotonera {
+  font-family: "Manrope", sans-serif;
+  border: 2px solid purple;
+  background-color: cornsilk;
+  font-size: 22px;
+}
+.botonbotonera:hover {
+  background-color: pink;
+}
+.fondorosa {
+  background-color: pink;
+}
+.btnnota {
+  font-size: 15px;
+}
+
+/* AYUDAS */
+.ayudasec {
+  padding: 10px 10px;
+}
+.btnayuda {
+  border-radius: 50%;
+  padding: 5px 5px;
+  border-bottom: 3px solid black;
+  font-size: 18px;
+}
+.ayudatxt {
+  background-color: blanchedalmond;
+  width: max-content;
+  border: 2px solid gray;
+  padding: 10px 10px;
+  border-radius: 10%;
+}
+
+/* SECCIONES */
+.resultadomate {
+  width: 50px;
+  font-size: 20px;
+}
+.cuenta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.cuenta p {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+  text-align: center;
+}
+.cuentawrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.verbos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.verbing {
+  border: 2px solid blue;
+  margin: 1px 1px;
+  background-color: rgb(162, 95, 224);
+  text-align: center;
+}
+.verbingdrop {
+  background-color: chartreuse;
+}
+
+/* RESPONSIVE, TAMAÑO PARA MOBILE */
+
+@media only screen and (max-width: 890px) {
+  body {
+    background-size: contain;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    margin-top: 20px;
+    background-color: rgb(114, 98, 53);
+    background-size: cover;
+    background: url(./img/fondookcel.jpg);
+    background-position-x: center;
+  }
+  .tarea {
+    margin: 0 auto;
+  }
+  .tareawrap {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 25px;
+  }
+}
